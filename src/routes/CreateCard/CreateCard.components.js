@@ -45,13 +45,13 @@ export default function CreateCard () {
         ];
 
         const linkList = [
-            { linkUrl: `/decks/${deckId}`, name: `${deck.name}`}
+            { linkUrl: `/decks/${deckId}`, name: `${deck.name}`, key: 1}
         ];
 
         return (
             <>
-                <Breadcrumb linkList={linkList} pageName={"Add Cards"} />
-                <h2>{deck.name}: Add Cards</h2>
+                <Breadcrumb linkList={linkList} pageName={"Add Card"} />
+                <h2>{deck.name}: Add Card</h2>
                 <Form onSubmit={handleSubmit} onCancel={handleCancel} formInputs={formInputs} previousData={deck} />
             </> )
     } else return "Loading deck here..."

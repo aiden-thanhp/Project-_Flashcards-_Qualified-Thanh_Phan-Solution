@@ -17,7 +17,7 @@ export default function Study() {
 
     if (deck) {
         const linkList = [
-        { linkUrl: `/decks/${deck.id}`, name: `${deck.name}`}
+        { linkUrl: `/decks/${deck.id}`, name: `${deck.name}`, key: 1}
         ];
 
         return (

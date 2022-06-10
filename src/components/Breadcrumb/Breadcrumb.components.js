@@ -13,7 +13,7 @@ export default function Breadcrumb({ linkList=[], pageName="" }) {
                 </li>
 
                 {linkList ? linkList.map((link) => 
-                    <li className="breadcrumb-item">
+                    <li key={link.key} className="breadcrumb-item">
                         <Link to={link.linkUrl}>
                             {link.name}
                         </Link>
