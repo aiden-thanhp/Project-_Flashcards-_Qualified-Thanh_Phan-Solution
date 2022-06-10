@@ -20,7 +20,7 @@ export default function Form({ onSubmit, onCancel, formInputs, previousData }) {
 
     return (
         <form onSubmit={(event) => onSubmit(event, form)}>
-            {formInputs.map(({ defaultValue, label, name, type, id }) => {
+            {formInputs.map(({ defaultValue, label, name, type, id, placeholder }) => {
                 return (
                     <div key={name} className="mb-3">
                         <label htmlFor={label}>{label}</label>
@@ -29,15 +29,16 @@ export default function Form({ onSubmit, onCancel, formInputs, previousData }) {
                                 id={id}
                                 name={name}
                                 className={"form-control"}
-                                value={form[name] || defaultValue}
+                                value={form[name]}
                                 onChange={handleChange}
-                                rows="5"/>
+                                rows="5"
+                                placeholder={placeholder}/>
                             : <input 
                                 id={id}
                                 type={"text"}
                                 name={name}
                                 className={"form-control"}
-                                value={form[name] || defaultValue}
+                                value={form[name]}
                                 onChange={handleChange}/>
                         }
                     </div>

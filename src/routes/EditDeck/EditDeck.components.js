@@ -34,14 +34,14 @@ export default function EditDeck() {
                 name: "name", 
                 type: "text", 
                 id: "deckName",
-                defaultValue: `${deck.name}`
+                placeholder: `${deck.name}`
             },
             {
                 label: "Description",
                 name: "description",
                 type: "textarea",
                 id: "deckDescription",
-                defaultValue: `${deck.description}`
+                placeholder: `${deck.description}`
             }
         ];
 

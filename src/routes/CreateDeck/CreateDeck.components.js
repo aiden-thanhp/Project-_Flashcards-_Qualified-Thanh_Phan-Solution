@@ -25,14 +25,14 @@ export default function CreateDeck() {
             name: "name", 
             type: "text", 
             id: "deckName",
-            defaultValue: "Deck Name"
+            placeholder: "Deck Name"
         },
         {
             label: "Description",
             name: "description",
             type: "textarea",
             id: "deckDescription",
-            defaultValue: "Brief description of the deck"
+            placeholder: "Brief description of the deck"
         }
     ]
     

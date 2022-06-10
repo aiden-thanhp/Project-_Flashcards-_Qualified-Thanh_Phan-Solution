@@ -42,14 +42,14 @@ export default function EditCard() {
                 name: "front", 
                 type: "textarea", 
                 id: "front",
-                defaultValue: `${card.front}`
+                placeholder: `${card.front}`
             },
             {
                 label: "Back",
                 name: "back",
                 type: "textarea",
                 id: "back",
-                defaultValue: `${card.back}`
+                placeholder: `${card.back}`
             }
         ];
 

@@ -33,14 +33,14 @@ export default function CreateCard () {
                 name: "front", 
                 type: "textarea", 
                 id: "front",
-                defaultValue: "Front side of card"
+                placeholder: "Front side of card"
             },
             {
                 label: "Back",
                 name: "back",
                 type: "textarea",
                 id: "back",
-                defaultValue: "Back side of Card"
+                placeholder: "Back side of Card"
             }
         ];
 
